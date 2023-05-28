@@ -1,27 +1,94 @@
 <header>
-<div id="Shield">
-    <img src="https://assets.stickpng.com/images/584a9b3bb080d7616d298777.png" alt="FCB Shield">
-</div>
-<div id="FirstTeam">
-    FIRST TEAM &#9662;
-</div>
-<div id="Club">
-    CLUB &#9662;
-</div>
-<div id="BarçaTeams">
-    BARÇA TEAMS &#9662;
-</div>
+    <div class="header_top"></div>
+    <div class="header_midd">
+        <div class="Logo">
+            <img
+                src="https://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+                alt="FCB Logo"
+            />
+        </div>
+        <div class="Left_nav">
+            <div class="SubMenu" id="FirstTeam">
+                <p>FIRST TEAM &#9662;</p>
+            </div>
+            <div class="SubMenu" id="Club">
+                <p>CLUB &#9662;</p>
+            </div>
+            <div class="SubMenu" id="BarçaTeams">
+                <p>BARÇA TEAMS &#9662;</p>
+            </div>
+        </div>
+        <div class="Right_nav">
+            <div class="SubMenu" id="TicketsMuseum">
+                <p>&#127915; TICKETS &amp; MUSEUM &#9662;</p>
+            </div>
+            <div class="SubMenu" id="Shop">
+                <p>&#128085; SHOP&#8663;</p>
+            </div>
+            <div class="SubMenu" id="Culers">
+                <p>&#9917; CULERS &#9662;</p>
+            </div>
+        </div>
+        <div class="Search">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png" alt="Search Icon">
+        </div>
+    </div>
 </header>
 
 <style>
     header {
         border: 1px solid red;
-        background-color: rgb(7, 7, 99);
+        color: whitesmoke;
+        font-family: sans-serif;
+        --padding-nav-elements: 1em;
+    }
+    .header_top {
+        background-color: #0a0927;
+        height: 2em;
+        
+    }
+    .header_midd {
+        background-color: #181733;
         display: flex;
         flex-direction: row;
-        color: whitesmoke;
+        font-size: 60%;
+        align-items: center;
+    
     }
-    #Shield img {
+
+    .Logo {
+        margin-left: 1em;
+    }
+    .Logo img {
+        height: 5em;
+    }
+    .Left_nav {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1em;
+
+    }
+    .Left_nav .SubMenu{
+        padding-left: var(--padding-nav-elements);
+        padding-right: var(--padding-nav-elements);
+    }   
+    .Right_nav {
+        color: #fdc52c;
+        display: flex;
+        flex-direction: row;
+        margin-left:auto;
+    }
+    .Right_nav .SubMenu{
+        
+        padding-left: var(--padding-nav-elements);
+        padding-right: var(--padding-nav-elements);
+    } 
+    .Search{
+        padding-right: 1em;
+        padding-left: 1em;
+
+    }
+    .Search img{
         height: 3em;
     }
 </style>
