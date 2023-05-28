@@ -1,5 +1,7 @@
 ---
 const {title} = Astro.props;
+import FCBHeader from "../components/FCBHeader.astro";
+import FCBFooter from "../components/FCBFooter.astro";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,14 +12,10 @@ const {title} = Astro.props;
     <title>{title}</title>
 </head>
 <body>
-    <header>
-        Menu
-    </header>
+    <FCBHeader  /> 
     <main>
         <slot />
     </main>
-    <footer>
-        
-    </footer>
+    <FCBFooter/>
 </body>
 </html>
