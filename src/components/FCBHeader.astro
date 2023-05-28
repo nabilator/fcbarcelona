@@ -1,3 +1,6 @@
+---
+import "../components/Header.css"
+---
 <header>
     <div class="header_top"></div>
     <div class="header_midd">
@@ -23,7 +26,7 @@
                 <p>&#127915; TICKETS &amp; MUSEUM &#9662;</p>
             </div>
             <div class="SubMenu" id="Shop">
-                <p>&#128085; SHOP&#8663;</p>
+                <p><a href="https://store.fcbarcelona.com/en/?ext=OCM_420&utm_source=WebBarca&utm_medium=Menu&utm_campaign=MenuWebBarca_ORG_BLM_HOME_OCM_webBarca_TXT_WW_EN&_gl=1*1y2p6vi*_ga*MTY1ODg1MjMwMy4xNjg1MjczNDky*_ga_XCQ7B6K8TL*MTY4NTI3OTMyMi4yLjAuMTY4NTI3OTMyMi4wLjAuMA..&_ga=2.221796376.1033407983.1685273492-1658852303.1685273492">&#128085; SHOP&#8663;</a></p>
             </div>
             <div class="SubMenu" id="Culers">
                 <p>&#9917; CULERS &#9662;</p>
@@ -35,60 +38,3 @@
     </div>
 </header>
 
-<style>
-    header {
-        border: 1px solid red;
-        color: whitesmoke;
-        font-family: sans-serif;
-        --padding-nav-elements: 1em;
-    }
-    .header_top {
-        background-color: #0a0927;
-        height: 2em;
-        
-    }
-    .header_midd {
-        background-color: #181733;
-        display: flex;
-        flex-direction: row;
-        font-size: 60%;
-        align-items: center;
-    
-    }
-
-    .Logo {
-        margin-left: 1em;
-    }
-    .Logo img {
-        height: 5em;
-    }
-    .Left_nav {
-        display: flex;
-        flex-direction: row;
-        padding-left: 1em;
-
-    }
-    .Left_nav .SubMenu{
-        padding-left: var(--padding-nav-elements);
-        padding-right: var(--padding-nav-elements);
-    }   
-    .Right_nav {
-        color: #fdc52c;
-        display: flex;
-        flex-direction: row;
-        margin-left:auto;
-    }
-    .Right_nav .SubMenu{
-        
-        padding-left: var(--padding-nav-elements);
-        padding-right: var(--padding-nav-elements);
-    } 
-    .Search{
-        padding-right: 1em;
-        padding-left: 1em;
-
-    }
-    .Search img{
-        height: 3em;
-    }
-</style>

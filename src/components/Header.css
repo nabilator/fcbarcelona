@@ -1,0 +1,71 @@
+
+    header {
+        border: 1px solid red;
+        color: whitesmoke;
+        font-family: sans-serif;
+        --padding-nav-elements: 1em;
+    }
+    .header_top {
+        background-color: #0a0927;
+        height: 2em;
+        
+    }
+    .header_midd {
+        background-color: #181733;
+        display: flex;
+        flex-direction: row;
+        font-size: 60%;
+        font-weight: bold;
+        align-items: center;
+    
+    }
+
+    .Logo {
+        margin-left: 1em;
+    }
+    .Logo img {
+        height: 5em;
+    }
+    .Left_nav {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1em;
+
+    }
+    .Left_nav:hover > *{
+        color: lightgrey;
+    }
+    .Left_nav:hover > *:hover{
+        color:white;
+    }
+    .SubMenu{
+        padding-left: var(--padding-nav-elements);
+        padding-right: var(--padding-nav-elements);
+        transition: 1s ease;
+    }   
+    .Right_nav {
+        color: #fdc52c;
+        display: flex;
+        flex-direction: row;
+        margin-left:auto;
+    }
+    .Right_nav .SubMenu a{
+        color:#fdc52c;
+        text-decoration: none;
+        
+    }
+    .Right_nav:hover > *,.Right_nav:hover > #Shop a{
+        color: lightgrey;
+    }
+    .Right_nav:hover > *:hover,.Right_nav:hover > #Shop:hover a{
+        color:#fdc52c;
+    }
+    .Search{
+        padding-right: 1em;
+        padding-left: 1em;
+
+    }
+    .Search img{
+        height: 3em;
+    }
+
