@@ -4,19 +4,68 @@
         color: whitesmoke;
         font-family: sans-serif;
         --padding-nav-elements: 1em;
-    }
+        display: flex;
+        flex-direction: column;
+     }
     .header_top {
         background-color: #0a0927;
-        height: 2em;
+        height: 3em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
         
     }
+    #Login {
+        margin-left: auto;
+        padding-right: var(--padding-nav-elements);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #Login_icon {
+        border: 1px solid transparent;
+        border-radius: 100%;
+        background-color: #154284;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+    }
+    #Login_icon img{
+        height: 10px;
+
+    }
+    #Login p{
+        padding-left: 0.7em;
+        font-size: 70%;
+    }
+    #Register {
+        border: 1px solid greenyellow;
+        border-radius: 0.2em;
+        margin-right: var(--padding-nav-elements);
+        margin-left: var(--padding-nav-elements);
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+    }
+
+
     .header_midd {
+        margin-bottom: auto;
         background-color: #181733;
         display: flex;
         flex-direction: row;
-        font-size: 60%;
+        font-size: 80%;
         font-weight: bold;
         align-items: center;
+        height:5em;
     
     }
 
@@ -24,25 +73,26 @@
         margin-left: 1em;
     }
     .Logo img {
-        height: 5em;
-    }
-    .Left_nav {
-        display: flex;
-        flex-direction: row;
-        padding-left: 1em;
-
-    }
-    .Left_nav:hover > *{
-        color: lightgrey;
-    }
-    .Left_nav:hover > *:hover{
-        color:white;
+        height: 80px;
     }
     .SubMenu{
         padding-left: var(--padding-nav-elements);
         padding-right: var(--padding-nav-elements);
         transition: 1s ease;
-    }   
+    }
+    .Left_nav {
+        color: #ffff;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0.7em;
+
+    }
+    .Left_nav:hover > *{
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .Left_nav:hover > *:hover{
+        color:#ffff;
+    }
     .Right_nav {
         color: #fdc52c;
         display: flex;
@@ -55,17 +105,28 @@
         
     }
     .Right_nav:hover > *,.Right_nav:hover > #Shop a{
-        color: lightgrey;
+        color: rgba(255, 255, 255, 0.5);
     }
     .Right_nav:hover > *:hover,.Right_nav:hover > #Shop:hover a{
         color:#fdc52c;
     }
     .Search{
-        padding-right: 1em;
-        padding-left: 1em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        border: 1px solid transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        
 
     }
     .Search img{
-        height: 3em;
+        height: 4em;
+    }
+    .Search:hover{
+        background-color: rgba(255, 255, 255, 0.1);;
     }
 
