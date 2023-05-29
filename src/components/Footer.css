@@ -1,0 +1,46 @@
+
+footer {
+    background-color: #181733;
+    margin-top: auto;
+    font-family: sans-serif;
+}
+.SocialMedia {
+    display: flex;
+    flex-direction: column;  
+    
+    font-weight: bolder;
+    color: white;
+}
+.SocialMedia p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+.SocialMedia_BoxList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.SocialMedia_BoxList li{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+}
+.Corporate {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: white;
+}
+#Author {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+#Description{
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 80%;
+}

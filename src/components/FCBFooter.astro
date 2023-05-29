@@ -1,21 +1,95 @@
 ---
-import SocialMediaBox from "./SocialMediaBox.astro"
-import "./Footer.css"
+import SocialMediaBox from "./SocialMediaBox.astro";
+import "./Footer.css";
 ---
+
 <!-- only the lowest footer is considered -->
 <footer>
     <div class="SocialMedia">
-        <p> Follow FCBarcelona on social media</p>
+        <p>Follow FCBarcelona on social media</p>
         <ul class="SocialMedia_BoxList">
             <li id="Facebook">
-                <SocialMediaBox title="FCBarcelona" subtitle="@FCBarcelona" logo="https://assets.stickpng.com/images/60fea6773d624000048712b5.png" bckgrnd_color="#3b5998" />
+                <SocialMediaBox
+                    title="FCBarcelona"
+                    subtitle="@fcbarcelona"
+                    backgroundColor="#3b5984"
+                    textColor="white"
+                    logo="https://assets.stickpng.com/images/60fea6773d624000048712b5.png"
+                    logoWidth="30px"
+                    link="https://es-es.facebook.com/fcbarcelona/ "
+                />
+            </li>
+            <li id="Twitter">
+                <SocialMediaBox
+                    title="FCBarcelona"
+                    subtitle="@fcbarcelona"
+                    backgroundColor="#55acee"
+                    textColor="white"
+                    logo="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png"
+                    logoWidth="30px"
+                    link="https://twitter.com/FCBarcelona "
+                />
+            </li>
+            <li id="Spotify">
+                <SocialMediaBox
+                    title="Spotify"
+                    subtitle="@spotify"
+                    backgroundColor="#00d365"
+                    textColor="black"
+                    logo="https://i.pinimg.com/originals/20/1b/80/201b80228dd39f14dd116f68a05f3e2c.png"
+                    logoWidth="30px"
+                    link="https://spoti.fi/fcbarcelona"
+                />
+            </li>
+            <li id="Youtube">
+                <SocialMediaBox
+                    title="FC Barcelona"
+                    subtitle="Youtube"
+                    backgroundColor="#bb0000"
+                    textColor="white"
+                    logo="https://colegioverdemar.com/wp-content/uploads/2022/04/kisspng-paper-black-and-white-logo-pattern-youtube-play-button-5a771b86644a00.7236911315177552704108.png"
+                    logoWidth="40px"
+                    link="https://www.youtube.com/user/fcbarcelona"
+                />
+            </li>
+            <li id="Instagram">
+                <SocialMediaBox
+                    title="FCBarcelona"
+                    subtitle="@fcbarcelona"
+                    backgroundColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
+                    textColor="white"
+                    logoWidth="30px"
+                    logo="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png"
+                    link="https://www.instagram.com/fcbarcelona/"
+                />
+            </li>
+            <li id="OneFootball">
+                <SocialMediaBox
+                    title="FC Barcelona"
+                    subtitle="OneFootball"
+                    backgroundColor="#efefef"
+                    textColor="black"
+                    logoWidth="30px"
+                    logo="https://res.cloudinary.com/onefootball/image/fetch/q_auto,f_auto,fl_lossy,c_fill,e_unsharp_mask:90,w_458,h_458/https://brand.onefootball.com/media/pages/home/64ca98acb1-1660283447/landingpage_guidelines_logo.png"
+                    link="https://onefootball.com/en/team/barcelona-5"
+                />
+            </li>
+            <li id="TikTok">
+                <SocialMediaBox
+                    title="FC Barcelona"
+                    subtitle="Tik Tok"
+                    backgroundColor="black"
+                    textColor="white"
+                    logoWidth="30px"
+                    logo="https://assets.stickpng.com/images/62012ee14babde0004ca4177.png"
+                    link="https://www.tiktok.com/@fcbarcelona"
+                />
             </li>
         </ul>
     </div>
-    <div class="SiteMap">
-
-    </div>
+    <!--div class="SiteMap"></div-->
     <div class="Corporate">
-
+        <p id="Author">@Nabil Sarrate</p>
+        <p id="Description">This is a non official FC Barcelona Website</p>
     </div>
 </footer>

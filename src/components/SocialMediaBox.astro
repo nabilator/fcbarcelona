@@ -1,11 +1,47 @@
 ---
-const {logo, title, subtitle, bckgrnd_color} = Astro.props;
+const { title, subtitle, backgroundColor, textColor, logo, logoWidth, link } = Astro.props;
 ---
-<div class="SocialMedia_Box">
-    <img src={logo} alt="Social Media Logo">
-    <p>{title}</p>
-    <p>{subtitle}</p>
-</div>
-<style>
 
+<a href={link}>
+    <div class="SocialMedia_Box">
+        <img src={logo} alt="Social Media Logo" />
+        <span id="Title">{title}</span>
+        <span id="Subtitle">{subtitle}</span>
+    </div>
+</a>
+<style define:vars={{ backgroundColor, textColor, logoWidth }}>
+    .SocialMedia_Box {
+        box-sizing: border-box;
+        background: var(--backgroundColor);
+        width: 140px;
+        height: 105px;
+        color: var(--textColor);
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img {
+        padding-left: 1em;
+        padding-top: 0.7em;
+        height: 30px;
+        width: var(--logoWidth);
+    }
+
+    span {
+        padding-left: 1em;
+    }
+    #Title {
+        padding-top: 3em;
+        font-size: 80%;
+    }
+    #Subtitle {
+        padding-top: 0.4em;
+        margin-bottom: auto;
+    }
+    a {
+        text-decoration: none;
+    }
 </style>
