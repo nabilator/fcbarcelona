@@ -1,12 +1,12 @@
 
     header {
-        border: 1px solid transparent;
         color: whitesmoke;
         font-family: sans-serif;
         font-weight: 1000;
         --padding-nav-elements: 1em;
         display: flex;
         flex-direction: column;
+        position: relative;
      }
     .header_top {
         background-color: #0a0927;
@@ -118,7 +118,9 @@
         margin-left: 1em;
     }
     .Logo img {
-        height: 80px;
+        height: 90px;
+        position: absolute;
+        margin-top: -3.3em;
     }
     .SubMenu{
         padding-left: var(--padding-nav-elements);
@@ -129,7 +131,7 @@
         color: #ffff;
         display: flex;
         flex-direction: row;
-        padding-left: 0.7em;
+        margin-left: 7em;
 
     }
     .Left_nav:hover > *{
@@ -175,3 +177,7 @@
         background-color: rgba(255, 255, 255, 0.1);;
     }
 
+    .low_bar{
+        height: 0.5em;
+        background: linear-gradient(90deg,#cd122d 0,#154284);
+    }

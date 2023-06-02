@@ -1,12 +1,15 @@
 ---
 import SocialMediaBox from "./SocialMediaBox.astro";
 import "./Footer.css";
+
+import barçaPlayers from './barsa-players.json'
 ---
 
 <!-- only the lowest footer is considered -->
 <footer>
+    {barçaPlayers.map(player => <div>{player.name}</div>)}
     <div class="SocialMedia">
-        <p>Follow FCBarcelona on social media</p>
+        <p>Follow FC Barcelona on social media</p>
         <ul class="SocialMedia_BoxList">
             <li id="Facebook">
                 <SocialMediaBox
@@ -87,9 +90,67 @@ import "./Footer.css";
             </li>
         </ul>
     </div>
-    <!--div class="SiteMap"></div-->
+    <div class="SiteMap">
+        <div class="SiteMap_Group">
+            <h4 class="Group_title">Goalkeepers</h4>
+            <ul class="Group_list">
+                <li class="Group_item">
+                    <a href="">Marc-André ter Stegen</a>
+                </li>
+                <li class="Group_item">
+                    <a href="">Iñaki Peña</a>
+                </li>
+            </ul>
+        </div>
+        <div class="SiteMap_Group">
+            <h4 class="Group_title">Defenders</h4>
+            <ul class="Group_list">
+                <li class="Group_item">
+                    <a href="">Ronald Araujo</a>
+                </li>
+                <li class="Group_item">
+                    <a href="">Andreas Christensen</a>
+                </li>
+            </ul>
+        </div>
+        <div class="SiteMap_Group">
+            <h4 class="Group_title">Midfielders</h4>
+            <ul class="Group_list">
+                <li class="Group_item">
+                    <a href="">Sergio Busquets</a>
+                </li>
+                <li class="Group_item">
+                    <a href="">Gavi</a>
+                </li>
+            </ul>
+        </div>
+        <div class="SiteMap_Group">
+            <h4 class="Group_title">Forwards</h4>
+            <ul class="Group_list">
+                <li class="Group_item">
+                    <a href="">Ousmane Dembélé</a>
+                </li>
+                <li class="Group_item">
+                    <a href="">Robert Lewandowski</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="Corporate">
-        <p id="Author">@Nabil Sarrate</p>
-        <p id="Description">This is a non official FC Barcelona Website</p>
+        <div class="FCB_signature">
+            <img
+                src="https://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+                alt="FCB Logo"
+            />
+            <p>FC BARCELONA</p>
+        </div>
+        <div class="My_signature">
+            <p id="Author">@Nabil Sarrate</p>
+            <p id="Description">This is a Non Official FC Barcelona Website</p>
+        </div>
+        <div class="Lower_bars">
+            <div class="Gradient_bar"></div>
+            <div class="Last_bar"></div>
+        </div>
     </div>
 </footer>

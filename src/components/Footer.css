@@ -1,22 +1,23 @@
-
 footer {
     background-color: #181733;
-    margin-top: auto;
     font-family: sans-serif;
 }
+
 .SocialMedia {
     display: flex;
-    flex-direction: column;  
-    
+    flex-direction: column;
+
     font-weight: bolder;
     color: white;
 }
-.SocialMedia p{
+
+.SocialMedia p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 0;
 }
+
 .SocialMedia_BoxList {
     list-style-type: none;
     display: flex;
@@ -24,23 +25,82 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.SocialMedia_BoxList li{
+
+.SocialMedia_BoxList li {
     padding-left: 0.5em;
     padding-right: 0.5em;
-    
+
 }
+
+.SiteMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.SiteMap_Group {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 2em;
+}
+.Group_list {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
 .Corporate {
+    margin-top: 4em;
     margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.FCB_signature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.FCB_signature img {
+    height: 30px;
+}
+
+.FCB_signature p {
+    padding-left: 0.3em;
+    font-weight: bolder;
+    font-size: 140%;
+    letter-spacing: -1.8px;
+}
+
+.My_signature {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    color: white;
+    padding-left: 1em;
 }
+
 #Author {
     padding-right: 0.5em;
-    padding-left: 0.5em;
+
 }
-#Description{
+
+#Description {
     color: rgba(255, 255, 255, 0.671);
     font-size: 80%;
+}
+
+.Lower_bars {
+    margin-bottom: auto;
+}
+
+.Gradient_bar {
+    height: 1em;
+    background: linear-gradient(90deg,#cd122d 0,#154284);
+}
+
+.Last_bar {
+    height: 2em;
 }
