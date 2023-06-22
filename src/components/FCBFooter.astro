@@ -2,12 +2,11 @@
 import SocialMediaBox from "./SocialMediaBox.astro";
 import "./Footer.css";
 
-import barçaPlayers from './barsa-players.json'
+import barçaPlayers from "./fcb-players.json";
 ---
 
 <!-- only the lowest footer is considered -->
 <footer>
-    {barçaPlayers.map(player => <div>{player.name}</div>)}
     <div class="SocialMedia">
         <p>Follow FC Barcelona on social media</p>
         <ul class="SocialMedia_BoxList">
@@ -94,45 +93,57 @@ import barçaPlayers from './barsa-players.json'
         <div class="SiteMap_Group">
             <h4 class="Group_title">Goalkeepers</h4>
             <ul class="Group_list">
-                <li class="Group_item">
-                    <a href="">Marc-André ter Stegen</a>
-                </li>
-                <li class="Group_item">
-                    <a href="">Iñaki Peña</a>
-                </li>
+                {
+                    barçaPlayers
+                        .filter((item, index) => index < 2)
+                        .map((player) => (
+                                <li class="Group_item">
+                                    <a href="">{player.name}</a>
+                                </li>
+                        ))
+                }
             </ul>
         </div>
         <div class="SiteMap_Group">
             <h4 class="Group_title">Defenders</h4>
             <ul class="Group_list">
-                <li class="Group_item">
-                    <a href="">Ronald Araujo</a>
-                </li>
-                <li class="Group_item">
-                    <a href="">Andreas Christensen</a>
-                </li>
+                {
+                    barçaPlayers
+                        .filter((item, index) => index < 8 && index > 1)
+                        .map((player) => (
+                                <li class="Group_item">
+                                    <a href="">{player.name}</a>
+                                </li>
+                        ))
+                }
             </ul>
         </div>
         <div class="SiteMap_Group">
             <h4 class="Group_title">Midfielders</h4>
             <ul class="Group_list">
-                <li class="Group_item">
-                    <a href="">Sergio Busquets</a>
-                </li>
-                <li class="Group_item">
-                    <a href="">Gavi</a>
-                </li>
+                {
+                    barçaPlayers
+                        .filter((item, index) => index < 14 && index > 7)
+                        .map((player) => (
+                                <li class="Group_item">
+                                    <a href="">{player.name}</a>
+                                </li>
+                        ))
+                }
             </ul>
         </div>
         <div class="SiteMap_Group">
             <h4 class="Group_title">Forwards</h4>
             <ul class="Group_list">
-                <li class="Group_item">
-                    <a href="">Ousmane Dembélé</a>
-                </li>
-                <li class="Group_item">
-                    <a href="">Robert Lewandowski</a>
-                </li>
+                {
+                    barçaPlayers
+                        .filter((item, index) => index >13)
+                        .map((player) => (
+                                <li class="Group_item">
+                                    <a href="">{player.name}</a>
+                                </li>
+                        ))
+                }
             </ul>
         </div>
     </div>
