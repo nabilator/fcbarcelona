@@ -45,18 +45,18 @@ import SubMenu from "./SubMenu.astro";
         </div>
         <div class="Left_nav">
             <div class="SubMenu" id="FirstTeam">
-                <SubMenu title="FIRST TEAM   ▾" list={['Players', 'Latest' ]} />
+                <SubMenu title="FIRST TEAM   ▾" list={['Latest', 'Schedule', 'Players', 'Results' ]} />
             </div>
                 <div class="SubMenu" id="Club">
-                    <p>CLUB&MediumSpace; &#9662;</p>
+                    <SubMenu title="CLUB&MediumSpace; &#9662;" list={['History', 'Identity', 'Barça Academy', 'Facilities' ]} />
                 </div>
                 <div class="SubMenu" id="BarçaTeams">
-                    <p>BARÇA TEAMS&MediumSpace; &#9662;</p>
+                    <SubMenu title="BARÇA TEAMS&MediumSpace; &#9662;" list={['Football First Team', 'Women\'s Team ' , 'Basketball First Team', 'Handball First Team']} />
                 </div>
             </div>
             <div class="Right_nav">
                 <div class="SubMenu" id="TicketsMuseum">
-                    <p>&#127915; TICKETS &amp; MUSEUM&MediumSpace; &#9662;</p>
+                    <SubMenu title="&#127915; TICKETS &amp; MUSEUM&MediumSpace; &#9662;" list={['Men\'s Football', 'Basketball', 'Women\'s Football', 'Handball']} />
                 </div>
                 <div class="SubMenu" id="Shop">
                     <p>
@@ -67,7 +67,7 @@ import SubMenu from "./SubMenu.astro";
                     </p>
                 </div>
                 <div class="SubMenu" id="Culers">
-                    <p>&#9917; CULERS&MediumSpace; &#9662;</p>
+                    <SubMenu title="&#9917; CULERS&MediumSpace; &#9662;" list={['Premium', 'Barça TV+', 'Draws', 'Benefits']} />
                 </div>
             </div>
             <div class="Search">

@@ -144,6 +144,7 @@
         color: #fdc52c;
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-left:auto;
     }
     .Right_nav .SubMenu a{
