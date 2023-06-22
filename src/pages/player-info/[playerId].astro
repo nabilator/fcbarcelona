@@ -1,0 +1,85 @@
+---
+import barçaPlayers from "../../components/fcb-players.json";
+import FCBLayout from "../../layouts/FCBLayout.astro";
+export async function getStaticPaths() {
+    return [
+        barçaPlayers.map((player) => ({
+            params: {
+                playerId: player.id,
+            },
+        })),
+    ];
+}
+const { playerId } = Astro.params;
+---
+
+<FCBLayout title="Non Official FC Barcelona Website">
+    <main>
+    {
+        barçaPlayers
+            .filter(({ id }) => id === playerId)
+            .map((player) => (
+                <div class="PlayerData">
+                    <div class="PlayerName">
+                        <h1>{`${player.name}`}</h1>
+                    </div>
+                    <div class="PlayerDetails">
+                        <div class="PlayerPhoto">
+                            <img
+                                src={player.photo}
+                                alt={`Photo of ${player.name}`}
+                            />
+                        </div>
+                        <div class="PlayerInfo">
+                            <div>
+                                <h2>Position:</h2> <p>{player.position}</p>
+                            </div>
+                            <div>
+                                <h2>Age:</h2> <p>{player.age}</p>
+                            </div>
+                            <div>
+                                <h2>Number:</h2> <p>{player.number}</p>
+                            </div>
+                            <div>
+                                <h2>Market value:</h2> <p>{player.value}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))
+    }
+    </main>
+</FCBLayout>
+
+<style>
+    body {
+        font-family: sans-serif;
+        letter-spacing: -1.5px;
+        background-color: #fff;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        align-items: center;
+    }
+    .PlayerData{
+        display: flex;
+        flex-direction: column;
+    }
+    .PlayerName {
+        color: #181733;
+    }
+    .PlayerDetails {
+        display: flex;
+        flex: row;
+        padding-bottom: 3em;
+    }
+    .PlayerInfo {
+        padding-left: 3em;
+    }
+    img {
+        height: 30em;
+        margin-left: auto;
+    }
+</style>

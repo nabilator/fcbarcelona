@@ -98,7 +98,7 @@ import barçaPlayers from "./fcb-players.json";
                         .filter((item, index) => index < 2)
                         .map((player) => (
                                 <li class="Group_item">
-                                    <a href="">{player.name}</a>
+                                    <a href={`../player-info/${player.id}`}>{player.name}</a>
                                 </li>
                         ))
                 }
@@ -112,7 +112,7 @@ import barçaPlayers from "./fcb-players.json";
                         .filter((item, index) => index < 8 && index > 1)
                         .map((player) => (
                                 <li class="Group_item">
-                                    <a href="">{player.name}</a>
+                                    <a href={`../player-info/${player.id}`}>{player.name}</a>
                                 </li>
                         ))
                 }
@@ -126,7 +126,7 @@ import barçaPlayers from "./fcb-players.json";
                         .filter((item, index) => index < 14 && index > 7)
                         .map((player) => (
                                 <li class="Group_item">
-                                    <a href="">{player.name}</a>
+                                    <a href={`../player-info/${player.id}`}>{player.name}</a>
                                 </li>
                         ))
                 }
@@ -140,7 +140,7 @@ import barçaPlayers from "./fcb-players.json";
                         .filter((item, index) => index >13)
                         .map((player) => (
                                 <li class="Group_item">
-                                    <a href="">{player.name}</a>
+                                    <a href={`../player-info/${player.id}`}>{player.name}</a>
                                 </li>
                         ))
                 }

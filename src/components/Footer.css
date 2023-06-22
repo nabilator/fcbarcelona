@@ -36,17 +36,27 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3em;
 }
 .SiteMap_Group {
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-right: 2em;
+    color: #fff;
 }
 .Group_list {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 0;
 
+}
+.Group_list a{
+    text-decoration: none;
+    color: hsla(0,0%,100%,.75);
+}
+.Group_list a:hover{
+    text-decoration: underline;
 }
 
 .Corporate {
